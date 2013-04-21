@@ -11,12 +11,11 @@
 		<link rel="stylesheet" href="plugins/royalslider/royalslider.css">
 		<link rel="stylesheet" href="plugins/royalslider/skins/minimal-white/rs-minimal-white.css">
 	
-		<script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
-		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<!--script src="http://modernizr.com/downloads/modernizr-latest.js"></script-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src="plugins/royalslider/jquery.royalslider.min.js"></script>
+		<script src="plugins/royalslider/rsInit.js"></script>
 		<script src="plugins/responsive.js"></script>
-		<!--script src="plugins/royalslider/dev/jquery.royalslider.js"></script-->
-		
 
 	</head>
 	<body>
@@ -31,17 +30,14 @@
 			
 				<nav>
 					<ul>
-						<li><a href="file://localhost/Users/Seth_Mac/Documents/School/Sem7_DoWork/IDSCapstone/wwwCode/index.html#slide-1">THE THESIS</a></li>
-						<li><a href="file://localhost/Users/Seth_Mac/Documents/School/Sem7_DoWork/IDSCapstone/wwwCode/index.html#slide-11">USEFUL RESOURCES</a></li>
-						<li><a href="swieder_designdoc.pdf">FULL DESIGN DOC</a></li>
+						<li><a href="http://hybrid-designer.com/#slide-1">THE THESIS</a></li>
+						<li><a href="http://hybrid-designer.com/#slide-11">USEFUL RESOURCES</a></li>
+						<li><a href="http://hybrid-designer.com/designdoc.pdf">FULL DESIGN DOC</a></li>
 					</ul>	
 				</nav>
-				
-				<!--div id="download"><a href="swieder_designdoc.pdf" target="_blank">VIEW FULL<br>DESIGN DOC</a></div-->
 					
 				<a href="#"><img id="btnFullScreen" src="img/BtnFS.png"/></a>
 					
-			
 		</header>
 		
 			
@@ -284,13 +280,6 @@
 	</body>
 	
 	<script>
-
-	
-
-		if( $("#slidex").hasClass('rsActiveSlide') ){
-			alert("zomg!");
-		}
-	
 		//Full Screen Mode
 		var myFullscreenEnabled = false;
 		$('#btnFullScreen').mousedown(function() {		
@@ -324,39 +313,6 @@
 		    document.webkitCancelFullScreen();
 		  }
 		}
-
-	
-	
-	    //Instantiates Slider
-	 	jQuery(document).ready(function($) {
-	        $("#full-slider").royalSlider({
-	            // options go here
-				addActiveClass: true,
-				arrowsNav: true,
-				arrows: true,
-				sliderTouch: true,
-				autoPlay: false,
-			    keyboardNavEnabled: true,
-			    controlsInside: false,
-				controlNavigation: 'bullets', //look into
-			    imageScaleMode: 'fill',
-			    autoScaleSlider: false, 
-				autoHeight: false,
-			    arrowsNavAutoHide: false,
-			    globalCaption: false,
-				transitionType:'fade',
-				block: { 
-					moveEffect: 'none', 
-					fadeEffect: true 
-				},
-				deeplinking: {
-				   	enabled: true,
-					change: true,
-					prefix: 'slide-',
-				},
-
-	        }); 
-	    });
 	</script>
 	
 </html>

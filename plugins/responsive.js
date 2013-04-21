@@ -1,11 +1,12 @@
-jQuery(document).ready(function($) {
-	alert($(window).width());
-//	alert($(#logo).height());
-});
-
-//Dynamic size of fonts/content 
+// ==================================================
+// = Responsive Design - Dynamic Formating of HTML  =
+// ==================================================
 jQuery(document).ready(function() {
 
+	// =====================
+	// = Defined Functions =
+	// =====================
+	
 	//Resize content
 	function updateHeight(){
 		var newHeight = $("html").height() - $("header").height();
@@ -18,25 +19,27 @@ jQuery(document).ready(function() {
 		$('.subText').css('font-size',   ($(window).width()*0.035)+'px');
 		$('.largeText').css('font-size', ($(window).width()*0.06)+'px');
 		$('.smallText').css('font-size', ($(window).width()*0.027)+'px');
+	}
+	
+	var slider = $(".royalSlider").data('royalSlider');
+	slider.ev.on('rsAfterSlideChange', function(event) {
+		//alert("fuckkkk");
+	})
+	
+	
 	
 	updateHeight();
 	updateFontSize();
+	
+
+
 
 	$(window).resize(function(){
 		updateHeight();
 		updateFontSize();
+
 	});
 
 
-		
-		/*
-		if( $(window).width() < 1000 ){
-			$('h1').css('font-size', 		 ($(window).width()*0.06)+'px');
-		}
-		else{
-			$('h1').css('font-size', '54px');	
-		}
-		*/
-	}
 	 
 });
