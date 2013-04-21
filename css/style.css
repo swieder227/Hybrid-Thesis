@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('../fonts/League_Gothic-webfont.eot?') format('eot'), url('../fonts/League_Gothic-webfont.woff') format('woff'), url('../fonts/League_Gothic-webfont.ttf') format('truetype');
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	overflow: hidden;
+}
+
+header {
+	width: 100%;
+	height: 103px;
+	background: url('../img/header_1px.png') repeat;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+	text-align: center;
+}
+
+/*header #headerContent {
+	width: 100%;
+	height: 103px;
+
+}
+*/
+#logo, #title, nav, #download, #btnFullScreen {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#logo {
+	float: left;
+}
+
+#title {
+	position: relative;
+	top: 15px;
+	left: 30px;
+}
+
+h1 {
+	font: 54px/54px 'LeagueGothic', helvetica, tahoma, sans-serif; 
+	color: #fff;
+	text-shadow: 1px 2px 2px #2d84db;
+	margin: 0px;
+}
+
+h2 {
+	font: 13px/16px helvetica, tahoma, sans-serif;
+	color: rgb(45,166,222); 
+	margin: 0px;
+	letter-spacing: 1px;
+}
+
+nav ul {
+	position: relative;
+	top: 8px;
+	left: 35px;
+	margin: 0px;
+	padding: 0px 10px;
+}
+
+nav ul li {
+	font: 12px/13px helvetica, tahoma, sans-serif;
+	list-style: none;
+	color: #fff;
+	margin: 1.0em;
+
+}
+
+nav a:link	  , #download a:link	{ color:#fff; }
+nav a:visited , #download a:visited { color:#fff; }
+nav a:hover   , #download a:hover   { color:rgb(45,166,222); }
+nav a:active  , #download a:active  { color:rgb(45,166,222); }
+
+#download a {
+	font: 12px/13px helvetica, tahoma, sans-serif;
+	margin: 0px;
+}
+
+#download {
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+#btnFullScreen {
+	float: right;
+	margin: 30px 20px 0px 40px;
+	width: 40px;
+	height: 40px;
+//	background:url("/img/btnFsSprite.png") 0px 0px no-repeat;
+
+}
+
+#pushFooter {
+	min-height: 100%;
+}
+
+#content {
+	overflow: auto;
+}
+
+#full-slider {
+	width: auto;
+	height: 600px; /*default, is dynamic*/
+}
+
+.royalSlider {
+	text-align: center;
+}
+
+.royalSlider,
+.royalSlider .rsOverflow,
+.royalSlider .rsSlide,
+.royalSlider .rsVideoFrameHolder,
+.royalSlider .rsThumbs,
+.roaylSlider .rsABlock,
+.rsMinW,
+.rsContent {
+    background: #222 !important;
+}
+
+.rsABlock {
+	position: relative !important;
+	//text-align: center;
+}
+
+.mainText {
+	font: 60px helvetica, tahoma, sans-serif; 
+	color: #fff;
+	margin: 25px;
+	display: block;
+	line-height: 120%;
+
+}
+
+.smallText {
+	font: 36px helvetica, tahoma, sans-serif;
+	color: #fff;
+	margin: 25px;
+	display: block;
+	line-height: 120%;
+}
+
+.subText {
+	font: 48px 'LeagueGothic', helvetica, tahoma, sans-serif;
+	color: #666;
+	margin: 25px;
+	display: block;
+	line-height: 80%;
+}
+
+.largeText {
+	font: 80px helvetica, tahoma, sans-serif; 
+	color: #fff;
+	margin: 25px;
+	display: block;
+	line-height: 120%;
+}
+
+.tightText {
+	margin-top: -20px !important;
+}
+
+.highlight {
+	background: rgb(45,166,222);
+	padding: 0 0.2em;
+
+}
+
+.recolor {
+	color: rgb(45,166,222);
+}
+
+.smallText a:link	, #download a:link	  { color:#fff; }
+.smallText a:visited , #download a:visited { color:#fff; }
+.smallText a:hover   , #download a:hover   { color:rgb(45,166,222); }
+.smallText a:active  , #download a:active  { color:rgb(45,166,222); }
+
+footer {         
+	position: relative;
+	margin-top: -25px;
+	height: 25px;
+	clear: both;
+	background: #000;
+	text-align: center;
+	//min-height: 100%;
+}
+
+footer p, footer a {
+	font: 12px/0px helvetica, tahoma, sans-serif; 
+	color: #fff;
+	display:inline;
+	position: relative;
+	top: 4px;
+}
+
+@media  (max-width: 800px){
+	h1 {font-size: 40px;}
+	h2 {font-size: 10px;}
+	#logo {width: 50px; height: 50px}
+}
