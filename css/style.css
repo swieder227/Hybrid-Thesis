@@ -12,7 +12,7 @@ html, body {
 
 header {
 	width: 100%;
-	height: 20%;
+	height: 100px;
 	background: #181818 url('../img/header_1px.png') bottom repeat-x;
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -20,8 +20,8 @@ header {
 	text-align: center;
 }
 
-#logo, #title, nav, #download, #btnFullScreen {
-	display: inline-block;
+#logo, #title, nav {
+	//display: inline-block;
 	vertical-align: top;
 	position: relative;
 }
@@ -29,6 +29,10 @@ header {
 #logo {
 	float: left;
 	height: 60%;
+}
+
+#title {
+	display: block;
 }
 
 h1 {
@@ -47,12 +51,13 @@ h2 {
 	line-height: 100%;
 }
 
-nav ul li {
-	font: 12px/13px helvetica, tahoma, sans-serif;
+nav ul li, nav ul {
+	font: 12px helvetica, tahoma, sans-serif;
 	list-style: none;
 	color: #fff;
-	margin: 1.0em;
-
+	margin: 1.0em 0em;
+	padding: 0px;
+	display:inline;
 }
 
 nav a:link	  , #download a:link	{ color:#fff; }
@@ -62,9 +67,11 @@ nav a:active  , #download a:active  { color:rgb(45,166,222); }
 
 #btnFullScreen {
 	float: right;
-	margin-right: 20px;
+	position: absolute;
 	width: 40px;
 	height: 40px;
+	top: 25px; 
+	right: 25px;
 //	background:url("/img/btnFsSprite.png") 0px 0px no-repeat;
 }
 
@@ -147,20 +154,50 @@ nav a:active  , #download a:active  { color:rgb(45,166,222); }
 .smallText a:hover   , #download a:hover   { color:rgb(45,166,222); }
 .smallText a:active  , #download a:active  { color:rgb(45,166,222); }
 
-/*footer {         
-	position: relative;
-	margin-top: -25px;
-	height: 25px;
-	clear: both;
-	background: #000;
-	text-align: center;
-	//min-height: 100%;
+
+/* ===================== */
+/* = RESPONSIVE DESIGN = */
+/* ===================== */
+
+/* Dektop-Large */
+@media ( min-width: 1025px) { 
+	header { height: 200px; }
+		h1  { font-size: 100px; }
+		h2  { font-size: 27px; letter-spacing: 0px }
+		#title { display: block; padding: 15px 0px;}
+		nav ul li { font-size: 17px; padding: 0px 25px }
+		#btnFullScreen { top: 25px; right: 25px; }
 }
 
-footer p, footer a {
-	font: 12px/0px helvetica, tahoma, sans-serif; 
-	color: #fff;
-	display:inline;
-	position: relative;
-	top: 4px;
-}*/
+/* Desktop-Small + Laptop */
+@media (min-width: 769px) and (max-width: 1024px){
+	header { height: 150px; }
+		h1  { font-size: 67px; }
+		h2  { font-size: 17px; letter-spacing: 1px }
+		#title { display: block; padding: 12px 0px;}
+		nav ul li { font-size: 13px; padding: 0px 13px }
+		#btnFullScreen { top: 17px; right: 17px; }
+}
+
+/* Device-Landscape */
+@media (max-width: 768px) and (orientation: landscape){
+	header { height: 80px; }
+		h1  { font-size: 50px; }
+		h2  { font-size: 12px; letter-spacing: 1px }
+		#title { display: inline-block; padding: 3px 0px;}
+		nav { display: inline-block; }
+		nav ul li { font-size: 12px; padding: 0px 13px; display: block; margin: 0.6em 0em}
+		/*#btnFullScreen { width: 25px; height: 25px; top: 7px; right: 7px; }*/
+		#btnFullScreen { opacity: 0; }
+}
+
+/* Device-Portrait */
+@media (max-width: 768px) and (orientation: portrait){
+	header { height: 150px; }
+		h1  { font-size: 50px; }
+		h2  { font-size: 12px; letter-spacing: 1px }
+		#title { display: block; padding: 20px 0px;}
+		nav ul li { font-size: 13px; padding: 0px 12px }
+		/*#btnFullScreen { width: 25px; height: 25px; top: 23px; right: 7px; }*/
+		#btnFullScreen { opacity: 0; }
+}
