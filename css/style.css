@@ -28,22 +28,23 @@ header {
 
 #logo {
 	float: left;
-	height: 74px;
-	width: 96px;
+	height: 60%;
 }
 
 h1 {
-	font: 54px/54px 'LeagueGothic', helvetica, tahoma, sans-serif; 
+	font: 54px 'LeagueGothic', helvetica, tahoma, sans-serif; 
 	color: #fff;
 	text-shadow: 1px 2px 2px #2d84db;
 	margin: 0px;
+	line-height: 100%;
 }
 
 h2 {
-	font: 13px/16px helvetica, tahoma, sans-serif;
+	font: 13px helvetica, tahoma, sans-serif;
 	color: rgb(45,166,222); 
 	margin: 0px;
 	letter-spacing: 1px;
+	line-height: 100%;
 }
 
 nav ul li {

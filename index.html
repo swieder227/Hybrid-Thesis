@@ -16,25 +16,28 @@
 		<script src="plugins/royalslider/jquery.royalslider.min.js"></script>
 		<script src="plugins/royalslider/rsInit.js"></script>
 		<script src="plugins/responsive.js"></script>
+		<script src="plugins/fullscreen.js"></script>
 
 	</head>
 	<body>
 
 		<header>
+				
 				<a href="#"><img id="logo" src="img/logo_v9.png"></a>
-			
+							
 				<div id="title">
 					<h1>HYBRID DIGITAL PRODUCTION</h1>
 					<h2>COMBINING VISUAL DESIGN + TECHNICAL PROGRAMMING</h2>
 				</div>
 			
-				<nav>
+				<!--nav>
 					<ul>
 						<li><a href="http://hybrid-designer.com/#slide-1">THE THESIS</a></li>
 						<li><a href="http://hybrid-designer.com/#slide-11">USEFUL RESOURCES</a></li>
 						<li><a href="http://hybrid-designer.com/designdoc.pdf">FULL DESIGN DOC</a></li>
 					</ul>	
-				</nav>
+				</nav-->
+
 					
 				<a href="#"><img id="btnFullScreen" src="img/BtnFS.png"/></a>
 					
@@ -278,41 +281,5 @@
 		</div>
 
 	</body>
-	
-	<script>
-		//Full Screen Mode
-		var myFullscreenEnabled = false;
-		$('#btnFullScreen').mousedown(function() {		
-			if(!myFullscreenEnabled){
-				launchFullScreen(document.documentElement);
-				myFullscreenEnabled = true;
-			}
-			else{
-				cancelFullscreen();
-				myFullscreenEnabled = false;
-			}
-		});
-		
-		// Find the right method, call on correct element
-		function launchFullScreen(element) {
-		  if(element.requestFullScreen) {
-		    element.requestFullScreen();
-		  } else if(element.mozRequestFullScreen) {
-		    element.mozRequestFullScreen();
-		  } else if(element.webkitRequestFullScreen) {
-		    element.webkitRequestFullScreen();
-		  }
-		}
-		
-		function cancelFullscreen() {
-		  if(document.cancelFullScreen) {
-		    document.cancelFullScreen();
-		  } else if(document.mozCancelFullScreen) {
-		    document.mozCancelFullScreen();
-		  } else if(document.webkitCancelFullScreen) {
-		    document.webkitCancelFullScreen();
-		  }
-		}
-	</script>
 	
 </html>
