@@ -1,0 +1,318 @@
+<!DOCTYPE html public 'Experimentation in HTML5 technologies -SW'>
+
+<html lang="en">
+	<head>
+		<title>Hybrid Design Thesis</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Seth Wieder">
+		<link rel="shortcut icon" type="image/x-icon" href="http://hybrid-designer.com/favicon.ico" >		
+		
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="plugins/royalslider/royalslider.css">
+		<link rel="stylesheet" href="plugins/royalslider/skins/minimal-white/rs-minimal-white.css">
+	
+		<!--script src="http://modernizr.com/downloads/modernizr-latest.js"></script-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="plugins/royalslider/jquery.royalslider.min.js"></script>
+		<script src="plugins/royalslider/rsInit.js"></script>
+		<script src="plugins/responsive.js"></script>
+
+	</head>
+	<body>
+
+		<header>
+				<a href="#"><img id="logo" src="img/logo_v8.png"></a>
+			
+				<div id="title">
+					<h1>HYBRID DIGITAL PRODUCTION</h1>
+					<h2>COMBINING VISUAL DESIGN + TECHNICAL PROGRAMMING</h2>
+				</div>
+			
+				<nav>
+					<ul>
+						<li><a href="http://hybrid-designer.com/#slide-1">THE THESIS</a></li>
+						<li><a href="http://hybrid-designer.com/#slide-11">USEFUL RESOURCES</a></li>
+						<li><a href="http://hybrid-designer.com/designdoc.pdf">FULL DESIGN DOC</a></li>
+					</ul>	
+				</nav>
+					
+				<a href="#"><img id="btnFullScreen" src="img/BtnFS.png"/></a>
+					
+		</header>
+		
+			
+		<div id="content">
+					
+					<div id="full-slider" class="royalSlider heroSlider rsMinW">
+						
+						<div class="rsContent"> 
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">There's a new approach <br>
+									to creative digital production</span>
+							</div>
+							<div class="rsABlock" data-delay="1500" data-speed="500">
+								<span class="mainText">THE <span class="recolor">HYBRID</span> <br>
+									<span class="highlight">DESIGNER &amp; DEVELOPER</span></span>
+							</div>
+						</div>
+
+						<div class="rsContent"> 
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">Industry trends show combining </span>
+							</div>
+							<div class="rsABlock" data-delay="1500" data-speed="500">
+								<span class="mainText">a <span class="highlight">visual and technical skillset</span></span>
+							</div>
+							<div class="rsABlock" data-delay="3000" data-speed="500">
+								<span class="mainText">is <span class="recolor">advantageous</span> in modern digital design.</span>
+							</div>
+						</div>
+						
+						<div class="rsContent">
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">It's relevant to many modern<br>
+									technology industries</span>
+							</div>
+							<div class="rsABlock" data-delay="2000" data-speed="500">
+								<span class="subText">Digital Media, Mobile, Web, Advertising</span> 
+							</div>
+							<div class="rsABlock" data-delay="3000" data-speed="500">
+								<span class="subText">Broadcasting, eCommerce, Video Game</span>
+							</div>
+						</div>
+						
+						<div class="rsContent"> 
+							<div class="rsABlock" data-delay="500" data-speed="1000">
+								<span class="largeText">What are the<br> 
+									advantages of having <br>
+									a <span class="recolor">hybrid</span> skillset combining<br>
+									<span class="highlight">design &amp; development?</span></span>
+							</div>
+						</div>
+						
+						<div class="rsContent"> 
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">Understand Extent of Technology</span>
+								<span class="subText tightText">Fundamental requirement to know what is possible in the software</span>
+							</div>
+							<div class="rsABlock" data-delay="4000" data-speed="500">
+								<span class="mainText">User-Interface Sensibility</span>
+								<span class="subText tightText">Recognize the importance of a designed user experience</span>
+							</div>
+							<div class="rsABlock" data-delay="8000" data-speed="500">
+								<span class="mainText">Cross-domain Collaboration</span>
+								<span class="subText tightText">Integrate and communicate efficiently with entire team</span>
+							</div>
+							<div class="rsABlock" data-delay="12000" data-speed="500">
+								<span class="mainText">Computer Literacy</span>
+								<span class="subText tightText">Efficiently utilize digital technologies and new software</span>
+							</div>
+						</div>
+						
+						<div class="rsContent"> 
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">And there's more...</span>
+							</div>
+							<div class="rsABlock" data-delay="2000" data-speed="500">
+								<span class="mainText ">Valuable to Start-Ups</span>
+								<span class="subText tightText">Realize ideas 100% from concept to delivery</span>
+							</div>
+							<div class="rsABlock" data-delay="6000" data-speed="500">
+								<span class="mainText">Improve Indie Development</span>
+								<span class="subText tightText">Breadth of knowledge contributes to entire workflow</span>
+							</div>
+							<div class="rsABlock" data-delay="10000" data-speed="500">
+								<span class="mainText">High-End Desktop Publishing</span>
+								<span class="subText tightText">Expand freelance capabilities</span>
+							</div>
+						</div>
+						
+						<div class="rsContent"> 
+							<!--div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">The bridge between<br><span class="highlight">creatives &amp; technologists</span> is overlapping.</span>
+							</div-->
+							
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<canvas id="myCanvas"></canvas>
+							    <script>
+							      var canvas  = document.getElementById('myCanvas');
+							      var context = canvas.getContext('2d');
+								  
+								 // resize the canvas to fill browser window dynamically
+							     window.addEventListener('resize', resizeCanvas, false);
+
+							      function resizeCanvas() {
+							                canvas.width = window.innerWidth;
+							                canvas.height = window.innerHeight / 3;
+
+							                drawStuff(); 
+							      }
+							      resizeCanvas();
+
+							      function drawStuff() {
+			
+									  var centerX = canvas.width / 2;
+									  var centerY = canvas.height / 2;
+									  var radius  = 70;
+								  
+									  context.fillStyle = 'rgb(45,166,222);';
+									  context.globalAlpha = 0.5;
+								
+								      context.beginPath();
+								      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+									  context.fill();
+									
+									  context.beginPath();
+								      context.arc(centerX+100, centerY, radius, 0, 2 * Math.PI, false);
+									  context.fill();
+									  
+
+								  }
+							    </script>
+							</div>
+							
+							<div class="rsABlock" data-delay="3000" data-speed="500">
+								<span class="mainText">And new professions that integrate<br> <span 	class="highlight">design &amp; development</span> are evolving.
+							</div>
+						</div>
+						
+						<div class="rsContent"> 
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="largeText">Rather than separate<br><span class="highlight">Design</span> OR <span class="highlight">Development</span>
+							</div>
+							<div class="rsABlock" data-delay="3000" data-speed="500">
+								<span class="largeText">Expand your skills<br> to relevant subsets of<br><span class="highlight">Design &amp; Development</span>
+							</div>
+						</div>
+						
+						<div class="rsContent"> 
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">Don't just take my word for it...</span>
+							</div>
+							<div class="rsABlock" data-delay="1500" data-speed="500">
+								<span class="smallText"><span class="recolor">"</span>the advantage is in the collaboration, a hybrid has the to ability to communicate effectively.<span class="recolor">"</span></span>
+								<span class="subText tightText">Justin Gettler - Creative Director of Digital Services, Kaon Interactive</span>
+							</div>
+							<div class="rsABlock" data-delay="3000" data-speed="500">
+								<span class="smallText"><span class="recolor">"</span>combine a traditional design discipline with technology trends and futurology<span class="recolor">"</span></span>
+								<span class="subText tightText">Rob Gonda - Global Head of Emergin Technology, SapientNitro</span>
+							</div>
+							<div class="rsABlock" data-delay="4500" data-speed="500">
+								<span class="smallText"><span class="recolor">"</span>most interesting and useful players in creating the modern Internet are hybrids between those two disciplines – people who can translate between the disparate languages of the visual and the technical.<span class="recolor">"</span></span>
+								<span class="subText tightText">Jolie O'Dell - Technology Journalist, Mashable</span>
+							</div>
+						</div>
+						
+						<div class="rsContent"> 
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">As digital production <br>expands exponentially, what <br><span class="recolor">digital</span> <span class="highlight">design development</span> <span class="recolor">skillset</span><br>will you equipt yourself with?</span>
+							</div>
+						</div>
+
+						<div class="rsContent">
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">Improve your skills:</span>
+							</div>
+							<div class="rsABlock" data-delay="1500" data-speed="500">
+								<span class="smallText"><a href="http://www.codeacademy.com/" target="_blank">Code Academy</a> - Interactive online coding exercies</span>
+							</div>
+							<div class="rsABlock" data-delay="2000" data-speed="500">
+								<span class="smallText"><a href="https://developer.mozilla.org/en-US/learn" target="_blank">Mozilla Developer Network</a> - Collection of web tutorials and demos</span>
+							</div>
+							<div class="rsABlock" data-delay="2500" data-speed="500">
+								<span class="smallText"><a href="http://hub.tutsplus.com/" target="_blank">Tuts Plus</a> - Hub for 2D, 3D, Web, Video, Audio &amp; more </span>
+							</div>
+							<div class="rsABlock" data-delay="3000" data-speed="500">
+								<span class="smallText"><a href="http://psd.tutsplus.com/articles/inspiration/teach-yourself-graphic-design-a-self-study-course-outline/" target="_blank">Teach Yourself Design Principles</a> - A self-study course online</span>
+							</div>	
+							
+						</div>
+						
+						<div class="rsContent">
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">Diversify your communities:</span>
+							</div>
+							<div class="rsABlock" data-delay="1500" data-speed="500">
+								<span class="smallText"><a href="http://forrst.com/post" target="_blank">Forrst</a> - Feedback for Designers &amp; Developers</span>
+							</div>
+							<div class="rsABlock" data-delay="2000" data-speed="500">
+								<span class="smallText"><a href="http://www.niice.co/" target="_blank">niice.</a> - High-end design inspiration</span>
+							</div>
+							<div class="rsABlock" data-delay="2500" data-speed="500">
+								<span class="smallText"><a href="http://dribbble.com/" target="_blank">Dribbble</a> - Exhibition of digital production</span>
+							</div>
+							<div class="rsABlock" data-delay="3000" data-speed="500">
+								<span class="smallText"><a href="http://www.reddit.com/r/learnprogramming/top/?sort=top%26t=all" target="_blank">/r/learnprogramming</a> - Library of educational programming resources</span>
+							</div>
+							<div class="rsABlock" data-delay="3500" data-speed="500">
+								<span class="smallText"><a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a> - Q/A and insights for development</span>
+							</div>
+						</div>
+						
+						<div class="rsContent">
+							<div class="rsABlock" data-delay="000" data-speed="500">
+								<span class="mainText">Join Professional Networks:</span>
+							</div>
+							<div class="rsABlock" data-delay="1500" data-speed="500">
+								<span class="smallText"><a href="http://www.aiga.org/" target="_blank">AIGA</a> - Assocaiton for Design</span>
+							</div>
+							<div class="rsABlock" data-delay="2000" data-speed="500">
+								<span class="smallText"><a href="http://visitmix.com/" target="_blank">MIX</a> - Community for Designers &amp; Developers</span>
+							</div>
+							<div class="rsABlock" data-delay="2500" data-speed="500">
+								<span class="smallText"><a href="http://dribbble.com/" target="_blank">SIGGRAPH</a> - Conference for Computer Graphics and Interactive Techniques</span>
+							</div>
+						</div>
+
+						<!--div class="rsContent">
+							<div class="rsABlock" data-delay="200" data-speed="300">
+								<img src="slides/s01_01.png"/>
+							</div>
+							<div class="rsABlock" data-delay="800" data-speed="300">
+								<img src="slides/s01_02.png"/>
+							</div>
+						</div-->
+					</div> 
+
+	
+		</div>
+
+	</body>
+	
+	<script>
+		//Full Screen Mode
+		var myFullscreenEnabled = false;
+		$('#btnFullScreen').mousedown(function() {		
+			if(!myFullscreenEnabled){
+				launchFullScreen(document.documentElement);
+				myFullscreenEnabled = true;
+			}
+			else{
+				cancelFullscreen();
+				myFullscreenEnabled = false;
+			}
+		});
+		
+		// Find the right method, call on correct element
+		function launchFullScreen(element) {
+		  if(element.requestFullScreen) {
+		    element.requestFullScreen();
+		  } else if(element.mozRequestFullScreen) {
+		    element.mozRequestFullScreen();
+		  } else if(element.webkitRequestFullScreen) {
+		    element.webkitRequestFullScreen();
+		  }
+		}
+		
+		function cancelFullscreen() {
+		  if(document.cancelFullScreen) {
+		    document.cancelFullScreen();
+		  } else if(document.mozCancelFullScreen) {
+		    document.mozCancelFullScreen();
+		  } else if(document.webkitCancelFullScreen) {
+		    document.webkitCancelFullScreen();
+		  }
+		}
+	</script>
+	
+</html>
