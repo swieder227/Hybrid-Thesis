@@ -8,18 +8,30 @@ jQuery(document).ready(function() {
 	// =====================
 	
 	//Resize content
-	function updateHeight(){
+	function rsSliderHeight(){
 		var newHeight = $("html").height() - $("header").height();
 		$("#full-slider").height(newHeight);	
 	}
 	
 	//Resizes fonts
-	function updateFontSize(){
-		$('.mainText').css('font-size',  ($(window).width()*0.05)+'px');
-		$('.subText').css('font-size',   ($(window).width()*0.035)+'px');
-		$('.largeText').css('font-size', ($(window).width()*0.06)+'px');
-		$('.smallText').css('font-size', ($(window).width()*0.027)+'px');
+	function rsFontSize(){
+		$('.mainText').css('font-size',  ($(window).width()*0.003)+'em');
+		$('.subText').css('font-size',   ($(window).width()*0.002)+'em');
+		$('.smallText').css('font-size', ($(window).width()*0.002)+'em');
+		$('.largeText').css('font-size', ($(window).width()*0.0035)+'em');
 	}
+	
+	//Resizes/Reposition Header Content
+	function rsHeader(){
+		var headerH = $("header").height();
+		
+		$('#title').css( 		 'top', (headerH - $('#title').height()) / 2 );
+		$('nav').css(    		 'top', (headerH - $('nav').height()) / 2 );
+		$('#btnFullScreen').css( 'top', (headerH - $('#btnFullScreen').height()) / 2 );
+		$('#logo').css( 		 'top', (headerH - $('#logo').height()) / 2 );
+	}
+	
+	
 	
 	var slider = $(".royalSlider").data('royalSlider');
 	slider.ev.on('rsAfterSlideChange', function(event) {
@@ -28,16 +40,16 @@ jQuery(document).ready(function() {
 	
 	
 	
-	updateHeight();
-	updateFontSize();
-	
+	rsSliderHeight();
+	rsFontSize();
+	rsHeader();
 
 
 
 	$(window).resize(function(){
-		updateHeight();
-		updateFontSize();
-
+		rsSliderHeight();
+		rsFontSize();
+		rsHeader();
 	});
 
 

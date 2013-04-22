@@ -12,8 +12,8 @@ html, body {
 
 header {
 	width: 100%;
-	height: 103px;
-	background: url('../img/header_1px.png') repeat;
+	height: 20%;
+	background: #181818 url('../img/header_1px.png') bottom repeat-x;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	white-space: nowrap;
@@ -23,16 +23,13 @@ header {
 #logo, #title, nav, #download, #btnFullScreen {
 	display: inline-block;
 	vertical-align: top;
+	position: relative;
 }
 
 #logo {
 	float: left;
-}
-
-#title {
-	position: relative;
-	top: 15px;
-	left: 30px;
+	height: 74px;
+	width: 96px;
 }
 
 h1 {
@@ -49,14 +46,6 @@ h2 {
 	letter-spacing: 1px;
 }
 
-nav ul {
-	position: relative;
-	top: 8px;
-	left: 35px;
-	margin: 0px;
-	padding: 0px 10px;
-}
-
 nav ul li {
 	font: 12px/13px helvetica, tahoma, sans-serif;
 	list-style: none;
@@ -70,24 +59,12 @@ nav a:visited , #download a:visited { color:#fff; }
 nav a:hover   , #download a:hover   { color:rgb(45,166,222); }
 nav a:active  , #download a:active  { color:rgb(45,166,222); }
 
-#download a {
-	font: 12px/13px helvetica, tahoma, sans-serif;
-	margin: 0px;
-}
-
-#download {
-	text-align: center;
-	margin-top: 30px;
-	margin-left: 50px;
-}
-
 #btnFullScreen {
 	float: right;
-	margin: 30px 20px 0px 40px;
+	margin-right: 20px;
 	width: 40px;
 	height: 40px;
 //	background:url("/img/btnFsSprite.png") 0px 0px no-repeat;
-
 }
 
 #full-slider {

@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 		autoPlay: false,
 	    keyboardNavEnabled: true,
 	    controlsInside: false,
-		controlNavigation: 'bullets', //look into
+		controlNavigation: 'none', //look into
 	    imageScaleMode: 'fill',
 	    autoScaleSlider: false, 
 		autoHeight: false,
