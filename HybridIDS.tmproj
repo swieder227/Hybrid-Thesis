@@ -3,24 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>plugins/responsive.js</string>
+	<string>css/style.css</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2013-04-22T19:00:40Z</date>
+			<date>2013-04-28T22:23:57Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>css/style.css</string>
 			<key>lastUsed</key>
-			<date>2013-04-22T19:02:38Z</date>
+			<date>2013-04-28T22:23:59Z</date>
 		</dict>
 		<dict>
-			<key>expanded</key>
-			<true/>
 			<key>name</key>
 			<string>img</string>
 			<key>regexFolderFilter</key>
@@ -35,20 +33,12 @@
 			<string>plugins</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
-			<key>selected</key>
-			<true/>
 			<key>sourceDirectory</key>
 			<string>plugins</string>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>gitpull.php</string>
-			<key>lastUsed</key>
-			<date>2013-04-22T15:58:59Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>156</integer>
+	<integer>220</integer>
 	<key>metaData</key>
 	<dict>
 		<key>css/style.css</key>
@@ -56,51 +46,37 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>22</integer>
+				<integer>12</integer>
 				<key>line</key>
-				<integer>23</integer>
+				<integer>204</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>18</integer>
-		</dict>
-		<key>gitpull.php</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>20</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>185</integer>
 		</dict>
 		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>12</integer>
+				<integer>19</integer>
 				<key>line</key>
-				<integer>38</integer>
+				<integer>14</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>16</integer>
+			<integer>286</integer>
 		</dict>
 		<key>plugins/fullscreen.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>3</integer>
+				<integer>32</integer>
 				<key>line</key>
-				<integer>8</integer>
+				<integer>9</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -112,23 +88,23 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>4</integer>
+				<integer>3</integer>
 				<key>line</key>
-				<integer>31</integer>
+				<integer>86</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>12</integer>
+			<integer>40</integer>
 		</dict>
 		<key>plugins/royalslider/rsInit.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>11</integer>
+				<integer>26</integer>
 				<key>line</key>
-				<integer>19</integer>
+				<integer>17</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -140,14 +116,13 @@
 	<array>
 		<string>index.html</string>
 		<string>css/style.css</string>
-		<string>plugins/fullscreen.js</string>
 		<string>plugins/responsive.js</string>
+		<string>plugins/fullscreen.js</string>
 		<string>plugins/royalslider/rsInit.js</string>
-		<string>gitpull.php</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{359, 71}, {910, 698}}</string>
+	<string>{{555, 131}, {960, 698}}</string>
 </dict>
 </plist>

@@ -3,40 +3,41 @@
   src: url('../fonts/League_Gothic-webfont.eot?') format('eot'), url('../fonts/League_Gothic-webfont.woff') format('woff'), url('../fonts/League_Gothic-webfont.ttf') format('truetype');
 }
 
+/* ============================ */
+/* = Default & Persistent CSS = */
+/* ============================ */
+
 html, body {
 	width: 100%;
 	height: 100%;
 	margin: 0px;
 	overflow: hidden;
+	font-size: 1em;
 }
 
 header {
 	width: 100%;
 	height: 100px;
-	background: #181818 url('../img/header_1px.png') bottom repeat-x;
+	background: purple; /*#181818 url('../img/header_1px.png') bottom repeat-x;*/
 	overflow-x: hidden;
 	overflow-y: hidden;
 	white-space: nowrap;
 	text-align: center;
 }
 
-#logo, #title, nav {
-	//display: inline-block;
+#title, nav {
 	vertical-align: top;
 	position: relative;
 }
 
-#logo {
-	float: left;
-	height: 60%;
-}
-
 #title {
 	display: block;
+	margin: 0px;
+	padding: 3px 0px;
 }
 
 h1 {
-	font: 54px 'LeagueGothic', helvetica, tahoma, sans-serif; 
+	font: 2em 'LeagueGothic', helvetica, tahoma, sans-serif; 
 	color: #fff;
 	text-shadow: 1px 2px 2px #2d84db;
 	margin: 0px;
@@ -44,7 +45,7 @@ h1 {
 }
 
 h2 {
-	font: 13px helvetica, tahoma, sans-serif;
+	font: 0.8em helvetica, tahoma, sans-serif;
 	color: rgb(45,166,222); 
 	margin: 0px;
 	letter-spacing: 1px;
@@ -52,12 +53,12 @@ h2 {
 }
 
 nav ul li, nav ul {
-	font: 12px helvetica, tahoma, sans-serif;
+	font: 1em helvetica, tahoma, sans-serif;
 	list-style: none;
 	color: #fff;
 	margin: 1.0em 0em;
-	padding: 0px;
 	display:inline;
+	padding: 0px 3px;
 }
 
 nav a:link	  , #download a:link	{ color:#fff; }
@@ -68,16 +69,15 @@ nav a:active  , #download a:active  { color:rgb(45,166,222); }
 #btnFullScreen {
 	float: right;
 	position: absolute;
-	width: 40px;
-	height: 40px;
-	top: 25px; 
-	right: 25px;
+	width: 30px;
+	height: 30px;
+	top: 5px; 
+	right: 5px;
 //	background:url("/img/btnFsSprite.png") 0px 0px no-repeat;
 }
 
 #full-slider {
 	width: auto;
-	height: 600px; /*default, is dynamic*/
 }
 
 #content {
@@ -93,26 +93,19 @@ nav a:active  , #download a:active  { color:rgb(45,166,222); }
 .roaylSlider .rsABlock,
 .rsMinW,
 .rsContent {
-    background: #222 !important;	
+    background: #222 !important;
 }
 
+.rsContent{
+	top: 20px;
+}
 
 .rsABlock {
 	position: relative !important;
-	//text-align: center;
 }
 
 .mainText {
-	font: 60px helvetica, tahoma, sans-serif; 
-	color: #fff;
-	margin: 25px;
-	display: block;
-	line-height: 120%;
-
-}
-
-.smallText {
-	font: 36px helvetica, tahoma, sans-serif;
+	font: 1.2em helvetica, tahoma, sans-serif; 
 	color: #fff;
 	margin: 25px;
 	display: block;
@@ -120,23 +113,21 @@ nav a:active  , #download a:active  { color:rgb(45,166,222); }
 }
 
 .subText {
-	font: 48px 'LeagueGothic', helvetica, tahoma, sans-serif;
-	color: #666;
+	font: 1.2em 'LeagueGothic', helvetica, tahoma, sans-serif;
+	color: #777;
 	margin: 25px;
 	display: block;
 	line-height: 80%;
+	//letter-spacing: 0.1em;
 }
 
-.largeText {
-	font: 80px helvetica, tahoma, sans-serif; 
+
+.smallText {
+	font: 20px helvetica, tahoma, sans-serif;
 	color: #fff;
 	margin: 25px;
 	display: block;
 	line-height: 120%;
-}
-
-.tightText {
-	margin-top: -20px !important;
 }
 
 .highlight {
@@ -149,55 +140,160 @@ nav a:active  , #download a:active  { color:rgb(45,166,222); }
 	color: rgb(45,166,222);
 }
 
-.smallText a:link	, #download a:link	  { color:#fff; }
+.smallText a:link	 , #download a:link	   { color:#fff; }
 .smallText a:visited , #download a:visited { color:#fff; }
 .smallText a:hover   , #download a:hover   { color:rgb(45,166,222); }
 .smallText a:active  , #download a:active  { color:rgb(45,166,222); }
 
 
-/* ===================== */
-/* = RESPONSIVE DESIGN = */
-/* ===================== */
+/* ================== */
+/* = RESPONSIVE CSS = */
+/* ================== */
+
+/* Device-Small-Portrait */
+@media only screen and (max-device-width: 320px) and (orientation: portrait), only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	header { height: 80px;  background: orange; }
+		h1  { font-size: 2.2em; }
+		h2  { font-size: 0.5em; letter-spacing: 0px;}
+		#title { display: block; margin: 0px; }
+		nav ul li { display: inline-block; font-size: 0.5em; padding: 0px 5px; margin: 0px}
+		#btnFullScreen { opacity: 0; }
+	.rsContent { top: 5px; }	
+		.mainText { font-size: 1.2em; margin: 8px; }
+		.subText  { font-size: 1.2em; }		
+		.smallText{ font-size: 0.6em; margin: 15px}
+			
+}
+
+/* Device-Small-Landscape */
+@media only screen and (max-device-width: 320px) and (orientation: landscape), only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+	header { height: 42px;  background: orange;}
+		h1  { font-size: 1.5em; }
+		h2  { display:none;}
+		#title { display: inline-block; margin: 0px; top: 7px}
+		nav, nav ul { display: inline-block; margin: 0px; padding: 0px 0px 3px 0px;}
+		nav ul li { font-size: 8px; display: block; margin: 2px 0px;}
+		#btnFullScreen { opacity: 0; }
+	.rsContent { top: 0px; }	
+		.mainText { font-size: 0.9em; margin: 4px; }
+		.subText  { font-size: 0.9em; margin: 4px; }		
+		.smallText{ font-size: 0.5em; margin: 4px; }
+	.rsNav { display: none; }
+	.rsArrowIcn { display:none; }
+}
+
+/* Device-Large-Portrait */
+@media only screen and (min-device-width: 321px) and (max-device-width: 480px) and (orientation: portrait) {
+	header { height: 95px;  background: green; }
+		h1  { font-size: 2.5em; }
+		h2  { font-size: 0.58em; }
+		#title { display: block; margin: 0px; }
+		nav ul li { display: inline-block; font-size: 0.7em; padding: 0px 5px; }
+		#btnFullScreen { opacity: 0; }
+	.rsContent { top: 25px; }	
+		.mainText { font-size: 1.2em; }
+		.subText  { font-size: 1.2em; }		
+		.smallText{ font-size: 0.8em; }	
+}
+
+/* Device-Large-Landscape */
+@media only screen and (min-device-width: 321px) and (max-device-width: 480px) and (orientation: landscape) {
+	header { height: 80px;  background: green;}
+		h1  { font-size: 57px; }
+		h2  { font-size: 14px; letter-spacing: 1px;}
+		#title { display: inline-block; padding: 5px 10px 0px 0px}
+		nav, nav ul { display: inline-block; height: 40px; margin: 0px; padding: 0px 0px 3px 0px;}
+		nav ul li { font-size: 12px; display: block; padding-top: 8px; margin: 0px}
+		#btnFullScreen { opacity: 0; }
+	.rsContent { top: 10px; }	
+		.mainText { font-size: 1.0em; margin: 8px; }
+		.subText  { font-size: 1.0em; }		
+		.smallText{ font-size: 0.7em; margin: 5px; }
+}
+
+/* Tablet-Small-Portrait */
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) and (orientation: portrait) {
+	header { height: 140px;  background: gray; }
+		h1  { font-size: 3.9em; }
+		h2  { font-size: 1.0em; }
+		#title { display: block; margin: 0px; }
+		nav ul li { display: inline-block; font-size: 1em; padding: 0px 5px; }
+		#btnFullScreen { opacity: 0; }
+	.rsContent { top: 50px; }	
+		.mainText { font-size: 1.5em; }
+		.subText  { font-size: 1.5em; }		
+		.smallText{ font-size: 1.0em; }	
+}
+
+/* Tablet-Small-Landscape */
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) and (orientation: landscape) {
+	header { height: 90px;  background: gray;}
+		h1  { font-size: 3.8em; }
+		h2  { font-size: 1.0em; letter-spacing: 1px;}
+		#title { display: inline-block; padding: 5px 10px 0px 0px}
+		nav, nav ul { display: inline-block; height: 40px; margin: 3px 0px; padding: 0px 0px 3px 0px;}
+		nav ul li { font-size: 12px; display: block; padding-top: 8px; margin: 0px}
+		#btnFullScreen { opacity: 0; }
+	.rsContent { top: 10px; }	
+		.mainText { font-size: 1.4em; margin: 15px; }
+		.subText  { font-size: 1.4em; }		
+		.smallText{ font-size: 1.0em; margin: 10px; }
+}
+
+
+/* Tablet-Large-Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait){
+	header { height: 180px;  background: blue; }
+		h1  { font-size: 5.0em; }
+		h2  { font-size: 1.2em; letter-spacing: 1px;}
+		#title { display: block; padding: 20px 0px; margin: 0px}
+		nav ul li { display: inline-block; font-size: 1.2em; padding: 0px 18px; margin: 0px; }
+		#btnFullScreen { opacity: 0; }
+	.rsContent { top: 120px; }	
+		.mainText { font-size: 2.0em; }
+		.subText  { font-size: 2.0em; }		
+		.smallText{ font-size: 1.5em; }	
+}
+
+/* Tablet-Large-Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	header { height: 85px;  background: blue;}
+		h1  { font-size: 3.8em;}
+		h2  { font-size: 0.95em; letter-spacing: 1px;}
+		#title { display: inline-block; padding: 3px 10px 3px 0px; }
+		nav, nav ul { display: inline-block; height: 40px; margin: 2px 0px; padding: 0px;}
+		nav ul li { font-size: 12px; display: block; padding-top: 8px; margin: 0px;}
+		#btnFullScreen { opacity: 0; }
+	.rsContent { top: 45px; }	
+		.mainText { font-size: 2.0em; }
+		.subText  { font-size: 2.0em; }		
+		.smallText{ font-size: 1.5em; }		
+}
+
+/* Desktop + Laptop */
+@media only screen and (min-device-width: 1024px){
+	header { height: 150px;  background: red;}
+		h1  { font-size: 4.0em; }
+		h2  { font-size: 1.0; letter-spacing: 1px;}
+		#title { display: block; padding: 3px 0px;}
+		nav ul li {  display: inline-block; font-size: 13px; padding: 0px 13px; }
+		#btnFullScreen { top: 17px; right: 17px; height: 40px; width: 40px;}
+	.rsContent { top: 70px; }	
+		.mainText { font-size: 45px; }
+		.subText  { font-size: 36px; }
+		.smallText{ font-size: 28px; }
+}
 
 /* Dektop-Large */
-@media ( min-width: 1025px) { 
-	header { height: 200px; }
+@media (min-device-width: 1024px) and (min-width: 1244px) { 
+	header { height: 200px; background: black; }
 		h1  { font-size: 100px; }
-		h2  { font-size: 27px; letter-spacing: 0px }
-		#title { display: block; padding: 15px 0px;}
-		nav ul li { font-size: 17px; padding: 0px 25px }
-		#btnFullScreen { top: 25px; right: 25px; }
-}
-
-/* Desktop-Small + Laptop */
-@media (min-width: 769px) and (max-width: 1024px){
-	header { height: 150px; }
-		h1  { font-size: 67px; }
-		h2  { font-size: 17px; letter-spacing: 1px }
-		#title { display: block; padding: 12px 0px;}
-		nav ul li { font-size: 13px; padding: 0px 13px }
-		#btnFullScreen { top: 17px; right: 17px; }
-}
-
-/* Device-Landscape */
-@media (max-width: 768px) and (orientation: landscape){
-	header { height: 80px; }
-		h1  { font-size: 50px; }
-		h2  { font-size: 12px; letter-spacing: 1px }
-		#title { display: inline-block; padding: 3px 0px;}
-		nav { display: inline-block; }
-		nav ul li { font-size: 12px; padding: 0px 13px; display: block; margin: 0.6em 0em}
-		/*#btnFullScreen { width: 25px; height: 25px; top: 7px; right: 7px; }*/
-		#btnFullScreen { opacity: 0; }
-}
-
-/* Device-Portrait */
-@media (max-width: 768px) and (orientation: portrait){
-	header { height: 150px; }
-		h1  { font-size: 50px; }
-		h2  { font-size: 12px; letter-spacing: 1px }
-		#title { display: block; padding: 20px 0px;}
-		nav ul li { font-size: 13px; padding: 0px 12px }
-		/*#btnFullScreen { width: 25px; height: 25px; top: 23px; right: 7px; }*/
-		#btnFullScreen { opacity: 0; }
+		h2  { font-size: 27px; letter-spacing: 0px;}
+		#title { display: block; padding: 5px 0px;}
+		nav ul li {  display: inline-block; font-size: 17px; padding: 0px 25px; }
+		#btnFullScreen { top: 25px; right: 25px; height: 40px; width: 40px;}
+	.rsContent { top: 90px; }
+		.mainText { font-size: 60px; }
+		.subText  { font-size: 45px; }
+		.smallText{ font-size: 36px; }
 }

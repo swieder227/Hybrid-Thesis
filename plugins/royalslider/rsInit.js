@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 		autoPlay: false,
 	    keyboardNavEnabled: true,
 	    controlsInside: false,
-		controlNavigation: 'none', //look into
+		controlNavigation: 'bullets', //look into
 	    imageScaleMode: 'fill',
 	    autoScaleSlider: false, 
 		autoHeight: false,
@@ -28,4 +28,22 @@ jQuery(document).ready(function($) {
 		},
 
     }); 	
+});
+
+//Resizes entire slider to full length of window
+jQuery(document).ready(function() {
+	function rsSliderHeight(){
+		var newHeight = $("html").height() - $("header").height();
+		$("#full-slider").height(newHeight);
+		$(".rsOverflow").height(newHeight);
+		
+	}
+	
+	rsSliderHeight();
+
+	$(window).resize(function(){
+		rsSliderHeight();
+		rsFontSize();
+		rsContent();
+	});
 });
